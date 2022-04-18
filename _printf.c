@@ -12,7 +12,7 @@ int _printf(const char *format, ...)
 {
 	va_list args;
 	int i, len;
-	int (*get_print_func)(va_list, int);
+	int (*get_print_func(char c)(va_list, int);
 
 	va_start(args, format);
 	if (!(format))
