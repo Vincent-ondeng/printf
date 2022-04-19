@@ -1,0 +1,56 @@
+.TH _PRINTF 1 "19 April 2022" "Program Manual for _printf"
+.hy
+.SH NAME 
+.PP
+_printf - formatted output conversion and print data.
+.B "PRINTF"
+in C.
+.PP
+.SH SYNOPSIS
+.nf
+.BI printf (FORMAT, ARGUMENT)...
+.PP
+.BI "#include 'main.h'"
+.BI "#include <stdarg.h>"
+.BI "include <unistd.h>"
+.PP
+.BI "int _printf(const char *format, ...);"
+.BI "int print_prg(va_list __attribute__((unused))' char *, unsigned int);"
+.BI "int print_chr(va_list arguments, char *buf, unsigned int ibuf);"
+.BI "int print_str(va_list arguments, char *buf, unsigned int ibuf);"
+.BI "int print_int(va_list arguments, char *buf, unsigned int ibuf);"
+.BI "int print_bnr(va_list arguments, char *buf, unsigned int ibuf);"
+.BI "int print_unt(va_list arguments, char *buf, unsigned int ibuf);"
+
+
+.SH EXIT STATUS
+.PP
+The program exits conventionally with a status of 0 when succesful and -1 when there's an error.
+
+.SH BUGS
+The program can only correctly identify 7 format specifiers. Any other format will cause unexpected behaviour.
+
+.SH AUTHORS
+.PP
+.RS
+NAME:
+.B Vincent Ondeng
+.RS i
+EMAIL:
+.B vincentondeng@gmail.com
+.RE
+.RE
+
+.PP
+.RS
+NAME:
+.B Sharon Nderi
+.RS i
+EMAIL:
+.B nderisharonw@gmail.com
+.RE
+.RE
+
+.SH COPYRIGHT
+Copyright (c) 2022
+
