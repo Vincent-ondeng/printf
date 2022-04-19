@@ -115,7 +115,6 @@ int print_di(va_list arg)
 		mul = mul / 10;
 		_putchar(((sign_n / mul) % 10) + '0');
 	}
-        
-	k += numlength;
+        k += numlength;
 	return (k);
 }
