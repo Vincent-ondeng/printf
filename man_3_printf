@@ -14,14 +14,25 @@ in C.
 .BI "#include <stdarg.h>"
 .BI "include <unistd.h>"
 .PP
+.BI "int _putchar(char c);"
 .BI "int _printf(const char *format, ...);"
+.BI "int print_per(va_list);"
+.BI "int print_di(va_list);"
+.BI "int print_s(va_list);"
+.BI "int print_c(va_list);"
 .BI "int print_prg(va_list __attribute__((unused))' char *, unsigned int);"
 .BI "int print_chr(va_list arguments, char *buf, unsigned int ibuf);"
 .BI "int print_str(va_list arguments, char *buf, unsigned int ibuf);"
 .BI "int print_int(va_list arguments, char *buf, unsigned int ibuf);"
 .BI "int print_bnr(va_list arguments, char *buf, unsigned int ibuf);"
 .BI "int print_unt(va_list arguments, char *buf, unsigned int ibuf);"
-
+.BI "int print_oct(va_list arguments, char *buf, unsigned int ibuf);"
+.BI "int print_hex(va_list arguments, char *buf, unsigned int ibuf);"
+.BI "int print_upx(va_list arguments, char *buf, unsigned int ibuf);"
+.PP
+.BI "int (*get_print_func(const char *s, int index))(va_list, char *, unsigned int);"
+.BI "int ev_print_func(const char *s, int index);"
+.PP
 
 .SH EXIT STATUS
 .PP
