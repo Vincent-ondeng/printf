@@ -33,7 +33,7 @@ int _printf(const char *format, ...)
 				while (spic[j].dt != NULL)
 				{
 					if (*spic[j].dt == format[i])
-							count += spic[j].f(arg)
+							count += spic[j].f(arg);
 							j++;
 							}
 							i++;
