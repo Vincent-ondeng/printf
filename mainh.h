@@ -1,5 +1,5 @@
-#ifndef _MAIN_
-#define _MAIN_
+#ifndef MAINH_H
+#define MAINH_H
 #include <stdarg.h>
 #include <unistd.h>
 #include <stdlib.h>
@@ -15,9 +15,9 @@ typedef struct spic
 } spic_t;
 
 int _putchar(char c);
-int _printf(const char *format, ...);
+int _pprintf(const char *format, ...);
 int print_c(va_list);
 int print_s(va_list);
 int print_per(va_list);
 int print_di(va_list);
-#endif /*_MAIN_*/
+#endif /*MAINH_H*/
