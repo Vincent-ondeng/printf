@@ -15,7 +15,7 @@ typedef struct spic
 } spic_t;
 
 int _putchar(char c);
-int _pprintf(const char *format, ...);
+int _printf(const char *format, ...);
 int print_c(va_list);
 int print_s(va_list);
 int print_per(va_list);
