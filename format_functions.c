@@ -112,7 +112,6 @@ int print_di(va_list arg)
         _putchar((pos_n / mul) + '0');
         while (mul != 1)
         {
-        {
                 mul = mul / 10;
 		_putchar(((pos_n / mul) % 10) + '0');
 	}
