@@ -1,5 +1,5 @@
-#ifndef MAINH_H
-#define MAINH_H
+#ifndef MAIN_H
+#define MAIN_H
 #include <stdarg.h>
 #include <unistd.h>
 #include <stdlib.h>
@@ -20,4 +20,4 @@ int print_c(va_list);
 int print_s(va_list);
 int print_per(va_list);
 int print_di(va_list);
-#endif /*MAINH_H*/
+#endif /*MAIN_H*/
