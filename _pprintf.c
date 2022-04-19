@@ -30,9 +30,9 @@ int _printf(const char *format, ...)
 				i++;
 				while (format[i] == ' ')
 					i++;
-				while (spic[j].id != NULL)
+				while (spic[j].dt != NULL)
 				{
-					if (*spic[j].id == format[i]
+					if (*spic[j].dt == format[i]
 							count += spic[j].f(arg)
 							j++;
 							}
