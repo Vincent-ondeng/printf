@@ -1,4 +1,4 @@
-#include "mainh.h"
+#include "main.h"
 
 /**
  * print_c - print characters
@@ -27,7 +27,7 @@ int print_s(va_list arg)
 {
 	int i = 0;
 	char *s;
-	char *p = "(NULL)";
+	char *p = "(null)";
 
 	s = va_arg(arg, char *);
 
@@ -110,40 +110,6 @@ int print_di(va_list arg)
 		i--;
 	}
 	_putchar((sign_n / mul) + '0');
-	while (mul != 1)
-	{
-		mul = mul / 10;
-=======
-        int i, k = 0, numlength;
-        int n = va_arg(arg, int);
-        unsigned int pos_n = 0;
-        int mul = 1;
-
-        if (n == 0)
-        {
-                _putchar(pos_n + '0');
-                return (1);
-        }
-        else if (n < 0)
-        {
-                _putchar('-');
-                pos_n = -n;
-                k++;
-        }
-        else
-        {
-                pos_n = n;
-        }
-
-        numlength = digit_count(pos_n);
-
-        i = numlength;
-        while (i != 1)
-        {
-                mul = mul * 10;
-                i--;
-        }
-        _putchar((sign_n / mul) + '0');
 	while (mul != 1)
 	{
 		mul = mul / 10;
